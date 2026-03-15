@@ -1,0 +1,39 @@
+{
+  "modules-left": ["workspaces"],
+  "modules-center": ["clock"],
+  "modules-right": ["tray", "pulseaudio", "network"],
+
+  "sway/workspaces": {
+  "disable-scroll": true,
+  "all-outputs": true,
+  "persistent-workspaces": {
+    "1": [],
+    "2": [],
+    "3": [],
+    "4": [],
+    "5": []
+     }
+  },
+
+  "clock": {
+  "format": "{:%H:%M %d/%m/%Y}",
+  "tooltip-format": "<tt><small>{calendar}</small></tt>",
+  "calendar": {
+    "mode": "month",
+    "mode-mon-col": 3,
+    "weeks-pos": "left",
+    "on-scroll": 1
+    }
+  },
+
+  "pulseaudio": {
+    "format": "",
+    "on-click": "/home/alex/.config/waybar/scripts/toggle-pavu.sh"
+  },
+
+  "network": {
+    "format-ethernet": "󰈀",
+    "tooltip-format": "{ifname}: {ipaddr}",
+    "format-disconnected": "󰖪 Disconnected"
+  }
+}

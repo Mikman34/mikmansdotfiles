@@ -1,0 +1,15 @@
+show_icons=true
+allow_images=true
+gtk_dark=true
+
+width=420
+lines=8
+columns=1
+
+hide_scroll=true
+prompt=Search...
+term=konsole
+
+location=center
+no_actions=true
+
