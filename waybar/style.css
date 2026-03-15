@@ -65,6 +65,19 @@ tooltip label {
   color: @text;
 }
 
+#clock tooltip {
+  font-size: 24px;
+  padding: 20px;
+}
+
+#clock tooltip * {
+  font-size: 24px;
+}
+
+#clock tooltip label {
+  font-size: 24px;
+}
+
 /* ── Common module styles ─────────────────────────────────── */
 #workspaces,
 #window,
@@ -144,8 +157,6 @@ tooltip label {
   font-style: italic;
   background-color: @surface0;
 }
-
-
 
 /* ── Clock ────────────────────────────────────────────────── */
 #clock {
@@ -250,7 +261,7 @@ tooltip label {
   color: @blue;
   background-color: @surface0;
   font-size: 16px;
-  padding: 4px 10px 4px 10px;
+  padding: 4px 10px;
   border-radius: 8px;
   min-width: 20px;
 }
@@ -258,20 +269,6 @@ tooltip label {
 #custom-arch:hover {
   background-color: @surface1;
   color: @sapphire;
-}
-
-/* ── Custom: Arch ────────────────────────────────────────── */
-#custom-arch {
-  color: @blue;
-  background-color: @surface0;
-  font-size: 16px;
-  padding: 4px 10px 4px 10px;
-  border-radius: 8px;
-  min-width: 20px;
-}
-
-#custom-arch:hover {
-  background-color: @surface1;
 }
 
 /* ── Custom: Power ────────────────────────────────────────── */

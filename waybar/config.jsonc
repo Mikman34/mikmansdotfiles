@@ -69,11 +69,11 @@
 
   // ── Clock ─────────────────────────────────────────────────────────────
   "clock": {
-    "format": "  {:%H:%M}",
-    "format-alt": "  {:%A, %B %d, %Y}",
-    "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+    "format": "  {:%H:%M}",
+    "format-alt": " {:%A, %B %d, %Y}",
+    "tooltip-format": "<big>{:%B %Y}</big>\n<tt><small>{calendar}</small></tt>",
     "calendar": {
-      "mode": "year",
+      "mode": "month",
       "mode-mon-col": 3,
       "weeks-pos": "right",
       "on-scroll": 1,
@@ -86,7 +86,7 @@
       }
     },
     "actions": {
-      "on-click-right": "mode",
+      "on-click": "mode",
       "on-scroll-up": "shift_up",
       "on-scroll-down": "shift_down"
     }
@@ -164,12 +164,12 @@
     "tooltip-format": " {}",
     "exec": "uname -r",
     "interval": "once",
-    "on-click": "~/.config/wofi/scripts/wofilauncher.sh"
+    "on-click": "bash ~/.config/wofi/scripts/wofilauncher.sh"
   },
 
   "custom/power": {
     "format": "󰐥",
-    "on-click": "~/.config/wofi/scripts/wofipowermenu.sh",
+    "on-click": "nohup bash ~/.config/wofi/scripts/wofipowermenu.sh &",
     "tooltip": false
   }
 }
