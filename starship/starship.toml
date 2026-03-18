@@ -8,7 +8,7 @@ format = """
 [╭─](bold fg:color_mauve)\
 [ $os ](fg:color_base bg:color_mauve)\
 [](fg:color_mauve bg:color_surface0)\
-[ $username@$hostname ](fg:color_mauve bg:color_surface0)\
+[ $username$hostname ](fg:color_mauve bg:color_surface0)\
 [](fg:color_surface0 bg:color_yellow)\
 [ $directory ](fg:color_base bg:color_yellow)\
 [](fg:color_yellow)\
